@@ -49,7 +49,7 @@ export default function BackgroundMusic() {
     <>
       <audio
         ref={audioRef}
-        src="/audio//BackgroundMusic.mp3"
+        src="/audio/Backgroundmusic.mp3"
         loop
         preload="auto"
       />
