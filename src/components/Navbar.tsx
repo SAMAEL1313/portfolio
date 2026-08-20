@@ -7,18 +7,18 @@ export default function Navbar() {
 
         {/* Logo */}
         <a
-  href="#home"
-  className="flex items-center"
-  aria-label="Home"
->
-  <Image
-    src="/images/logo.png"
-    alt="Samael logo"
-    width={45}
-    height={45}
-    className="rounded-full object-cover transition duration-300 hover:scale-110"
-  />
-</a>
+          href="#home"
+          className="flex items-center"
+          aria-label="Home"
+        >
+          <Image
+            src="/images/logo.png"
+            alt="Samael logo"
+            width={45}
+            height={45}
+            className="rounded-full object-cover transition duration-300 hover:scale-110"
+          />
+        </a>
 
         {/* Navigation links */}
         <div className="hidden items-center gap-8 text-sm text-gray-400 md:flex">
@@ -30,10 +30,10 @@ export default function Navbar() {
           </a>
 
           <a
-            href="#skills"
+            href="#tech-stack"
             className="transition hover:text-green-400"
           >
-            Skills
+            Tech Stack
           </a>
 
           <a
@@ -45,10 +45,10 @@ export default function Navbar() {
 
           <a
             href="#education"
-             className="transition hover:text-green-400"
->
-           Education
-</a>
+            className="transition hover:text-green-400"
+          >
+            Education
+          </a>
 
           <a
             href="#contact"
