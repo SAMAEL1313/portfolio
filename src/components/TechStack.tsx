@@ -1,4 +1,4 @@
-export default function Skills() {
+export default function TechStack() {
   const skills = [
     "HTML",
     "CSS",
@@ -12,7 +12,7 @@ export default function Skills() {
 
   return (
     <section
-      id="skills"
+      id="Techstack"
       className="border-t border-green-900/20 bg-black px-6 py-24 text-white"
     >
       <div className="mx-auto max-w-6xl">

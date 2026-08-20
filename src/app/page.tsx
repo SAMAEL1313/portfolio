@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
+import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 import BackgroundMusic from "@/components/BackgroundMusic";
 import Education from "@/components/Education";
@@ -81,7 +81,7 @@ export default function Home() {
 
 				{/* Other sections */}
 				<About />
-				<Skills />
+				<TechStack />
 				<Projects />
 				<Education />
 				<Contact />
