@@ -33,7 +33,6 @@ export default function Footer() {
             href="#home"
             className="transition hover:text-forest-400"
           >
-            Back to top ↑
           </a>
         </div>
       </div>

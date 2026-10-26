@@ -25,7 +25,7 @@ export default function About() {
             </p>
 
             <p>
-              I enjoy Vibe coding, experimenting with different
+              I enjoy Learning, experimenting with different
               technologies, and turning ideas into working projects.
             </p>
 
