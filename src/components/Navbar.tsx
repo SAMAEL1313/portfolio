@@ -16,7 +16,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-green-900/30 bg-black/80 backdrop-blur-md">
+    <nav className="fixed top-0 z-50 w-full border-b border-forest-900/30 bg-black/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 
         {/* Logo */}
@@ -37,12 +37,12 @@ export default function Navbar() {
         </a>
 
         {/* Navigation links */}
-        <div className="hidden items-center gap-8 text-sm text-gray-400 md:flex">
+        <div className="hidden items-center gap-8 text-sm text-silver-400 md:flex">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="transition hover:text-green-400"
+              className="transition hover:text-forest-400"
             >
               {link.label}
             </a>
@@ -56,7 +56,7 @@ export default function Navbar() {
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
-          className="rounded-lg p-2 text-gray-300 transition hover:text-green-400 md:hidden"
+          className="rounded-lg p-2 text-silver-300 transition hover:text-forest-400 md:hidden"
         >
           {isOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
         </button>
@@ -66,7 +66,7 @@ export default function Navbar() {
       {isOpen && (
         <div
           id="mobile-menu"
-          className="border-t border-green-900/30 bg-black/95 px-6 py-4 md:hidden"
+          className="border-t border-forest-900/30 bg-black/95 px-6 py-4 md:hidden"
         >
           <div className="flex flex-col gap-1">
             {links.map((link) => (
@@ -74,7 +74,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="rounded-lg px-3 py-3 text-gray-300 transition hover:bg-green-950/40 hover:text-green-400"
+                className="rounded-lg px-3 py-3 text-silver-300 transition hover:bg-forest-950/40 hover:text-forest-400"
               >
                 {link.label}
               </a>

@@ -21,10 +21,10 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="border-t border-green-900/20 bg-black px-6 py-24 text-white"
+      className="border-t border-forest-900/20 bg-black px-6 py-24 text-white"
     >
       <div className="reveal mx-auto max-w-6xl">
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-green-500">
+        <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-forest-500">
           Projects
         </p>
 
@@ -36,9 +36,9 @@ export default function Projects() {
           {projects.map((project) => (
             <article
               key={project.name}
-              className="flex flex-col rounded-xl border border-green-900/30 bg-green-950/10 p-6 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-[0_0_30px_rgba(34,197,94,0.12)]"
+              className="flex flex-col rounded-xl border border-forest-900/30 bg-forest-950/10 p-6 transition duration-300 hover:-translate-y-2 hover:border-forest-500 hover:shadow-[0_0_30px_rgba(79,127,93,0.12)]"
             >
-              <p className="text-sm uppercase tracking-wider text-green-500">
+              <p className="text-sm uppercase tracking-wider text-forest-500">
                 {project.category}
               </p>
 
@@ -46,7 +46,7 @@ export default function Projects() {
                 {project.name}
               </h3>
 
-              <p className="mt-4 flex-1 leading-7 text-gray-400">
+              <p className="mt-4 flex-1 leading-7 text-silver-400">
                 {project.description}
               </p>
 
@@ -56,7 +56,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`View ${project.name} on GitHub`}
-                  className="inline-flex items-center gap-2 rounded-lg border border-green-700 px-4 py-2 text-sm transition hover:bg-green-950"
+                  className="inline-flex items-center gap-2 rounded-lg border border-forest-700 px-4 py-2 text-sm transition hover:bg-forest-950"
                 >
                   <FaGithub className="h-4 w-4" />
                   View GitHub

@@ -3,17 +3,47 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-cormorant);
+
+  /* Dark academia palette: black, silver, forest green */
+  --color-forest-50: #f1f6f2;
+  --color-forest-100: #dce9df;
+  --color-forest-200: #b9d3c0;
+  --color-forest-300: #8fb69a;
+  --color-forest-400: #6f9f7c;
+  --color-forest-500: #5a8a68;
+  --color-forest-600: #3b6548;
+  --color-forest-700: #2e5039;
+  --color-forest-800: #22402c;
+  --color-forest-900: #1a3022;
+  --color-forest-950: #0d1c13;
+
+  --color-silver-100: #eceef0;
+  --color-silver-200: #d6d9dd;
+  --color-silver-300: #bfc3c8;
+  --color-silver-400: #a3a8ae;
+  --color-silver-500: #80858c;
+  --color-silver-600: #5f646a;
 }
 
 body {
   background: #000;
-  color: #ededed;
+  color: #e4e6e9;
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 ::selection {
-  background: rgba(34, 197, 94, 0.35);
+  background: rgba(59, 101, 72, 0.6);
   color: #fff;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif), Georgia, serif;
+  }
 }
 
 /* Keep section headings visible below the fixed navbar */
@@ -86,8 +116,8 @@ section[id] {
   height: 2.25rem;
   width: 2.25rem;
   border-radius: 9999px;
-  background: repeating-radial-gradient(circle, #1aff00 0 2px, #006e16 3px 4px);
-  box-shadow: inset 0 0 0 2px #007e1b, 0 0 0 1px #00620c;
+  background: repeating-radial-gradient(circle, #2a2d30 0 2px, #0b0c0d 3px 4px);
+  box-shadow: inset 0 0 0 2px #5f646a, 0 0 0 1px #3b6548;
 }
 
 .vinyl-record-playing {
@@ -102,15 +132,15 @@ section[id] {
   width: 0.7rem;
   transform: translate(-50%, -50%);
   border-radius: 9999px;
-  background: #4ade80;
+  background: #3b6548;
   box-shadow: inset 0 0 0 3px #111;
 }
 
 .game-grid {
   background-color: #05050500;
   background-image:
-    linear-gradient(rgba(255, 170, 0, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 255, 64, 0.853) 1px, transparent 1px);
+    linear-gradient(rgba(191, 195, 200, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(90, 138, 104, 0.12) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 

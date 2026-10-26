@@ -56,10 +56,10 @@ export default function TechStack() {
   return (
     <section
       id="tech-stack"
-      className="border-t border-green-900/20 bg-black px-6 py-24 text-white"
+      className="border-t border-forest-900/20 bg-black px-6 py-24 text-white"
     >
       <div className="reveal mx-auto max-w-6xl">
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-green-500">
+        <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-forest-500">
           Tech Stack
         </p>
 
@@ -70,7 +70,7 @@ export default function TechStack() {
         <div className="mt-12 space-y-10">
           {categories.map((category) => (
             <div key={category.name}>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-500">
+              <h3 className="mb-4 font-sans text-sm font-semibold uppercase tracking-wider text-silver-500">
                 {category.name}
               </h3>
 
@@ -80,14 +80,14 @@ export default function TechStack() {
                   return (
                     <div
                       key={item.name}
-                      className="group rounded-lg border border-green-900/30 bg-green-950/10 p-5 transition hover:-translate-y-1 hover:border-green-500 hover:bg-green-950/20"
+                      className="group rounded-lg border border-forest-900/30 bg-forest-950/10 p-5 transition hover:-translate-y-1 hover:border-forest-500 hover:bg-forest-950/20"
                     >
-                      <Icon aria-hidden="true" className="mb-3 h-6 w-6 text-gray-400 transition group-hover:text-green-400" />
+                      <Icon aria-hidden="true" className="mb-3 h-6 w-6 text-silver-400 transition group-hover:text-forest-400" />
 
-                      <h4 className="font-semibold text-green-400">
+                      <h4 className="font-semibold text-forest-400">
                         {item.name}
                       </h4>
-                      <p className="mt-1 text-sm text-gray-500">
+                      <p className="mt-1 text-sm text-silver-500">
                         {item.desc}
                       </p>
                     </div>

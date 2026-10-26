@@ -2,10 +2,10 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="border-t border-green-900/20 bg-black px-6 py-24 text-white"
+      className="border-t border-forest-900/20 bg-black px-6 py-24 text-white"
     >
       <div className="reveal mx-auto max-w-6xl">
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-green-500">
+        <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-forest-500">
           Education
         </p>
 
@@ -14,8 +14,8 @@ export default function Education() {
         </h2>
 
         <div className="mt-10">
-          <div className="rounded-xl border border-green-900/30 bg-green-950/10 p-6 transition duration-300 hover:border-green-500 hover:shadow-[0_0_30px_rgba(34,197,94,0.1)]">
-            <p className="text-sm uppercase tracking-wider text-green-500">
+          <div className="rounded-xl border border-forest-900/30 bg-forest-950/10 p-6 transition duration-300 hover:border-forest-500 hover:shadow-[0_0_30px_rgba(79,127,93,0.1)]">
+            <p className="text-sm uppercase tracking-wider text-forest-500">
               Currently Studying
             </p>
 
@@ -23,11 +23,11 @@ export default function Education() {
               Bachelor&apos;s Degree in Information Technology
             </h3>
 
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-silver-400">
               3rd Year IT Student
             </p>
 
-            <p className="mt-4 leading-7 text-gray-400">
+            <p className="mt-4 leading-7 text-silver-400">
               Currently developing my skills in software development,
               databases, networking, and other areas of information
               technology through academic work and personal projects.

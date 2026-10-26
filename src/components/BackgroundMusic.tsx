@@ -59,7 +59,7 @@ export default function BackgroundMusic() {
         type="button"
         aria-label={isPlaying ? "Pause background music" : "Play background music"}
         title={isPlaying ? "Pause music" : "Play music"}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-green-500/50 bg-neutral-950/90 text-green-400 shadow-lg shadow-green-950/40 backdrop-blur-md transition hover:scale-105 hover:border-green-400"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-forest-500/50 bg-black/90 text-forest-400 shadow-lg shadow-forest-950/40 backdrop-blur-md transition hover:scale-105 hover:border-forest-400"
       >
         <span className={`vinyl-record ${isPlaying ? "vinyl-record-playing" : ""}`}>
           <span className="vinyl-label" />
