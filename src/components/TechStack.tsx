@@ -7,6 +7,7 @@ import {
   SiPython,
   SiJavascript,
   SiFirebase,
+  SiSupabase,
   SiMysql,
   SiCplusplus,
   SiGit,
@@ -39,6 +40,7 @@ export default function TechStack() {
       name: "Database & Services",
       items: [
         { name: "Firebase", desc: "Backend-as-a-Service platform", icon: SiFirebase },
+        { name: "Supabase", desc: "Open-source Postgres backend platform", icon: SiSupabase },
         { name: "MySQL", desc: "Relational database", icon: SiMysql },
       ],
     },

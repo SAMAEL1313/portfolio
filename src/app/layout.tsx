@@ -25,12 +25,10 @@ export const metadata: Metadata = {
     "Portfolio of Karl Malone Dela Cruz, a 3rd-year IT student and full-stack developer building web, mobile, and AI projects.",
   authors: [{ name: "Karl Malone Dela Cruz", url: "https://github.com/SAMAEL1313" }],
   keywords: ["Karl Malone Dela Cruz", "SAMAEL1313", "portfolio", "full-stack developer", "IT student"],
-  icons: { icon: "/images/logo.png" },
   openGraph: {
     type: "website",
     title: "Karl Malone Dela Cruz | Full-Stack Developer",
     description: "3rd-year IT student and full-stack developer. Check out my projects.",
-    images: ["/images/logo.png"],
   },
 };
 
