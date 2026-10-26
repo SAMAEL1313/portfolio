@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="border-t border-forest-900/20 bg-black px-6 py-24 text-white"
+      className="border-t border-forest-900/20 bg-surface px-6 py-24 text-fg"
     >
       <div className="reveal mx-auto max-w-6xl">
         <SectionHeader numeral="I" label="About">

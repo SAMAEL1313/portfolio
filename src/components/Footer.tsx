@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-forest-900/20 bg-black px-6 py-8 text-sm text-silver-500">
+    <footer className="border-t border-forest-900/20 bg-surface px-6 py-8 text-sm text-silver-500">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
         <p>
           &copy; {new Date().getFullYear()} Karl Malone Dela Cruz

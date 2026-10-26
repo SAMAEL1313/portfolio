@@ -27,7 +27,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="border-t border-forest-900/20 bg-black px-6 py-24 text-white"
+      className="border-t border-forest-900/20 bg-surface px-6 py-24 text-fg"
     >
       <div className="reveal mx-auto max-w-6xl">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
@@ -54,10 +54,10 @@ export default function Projects() {
           {projects.map((project) => (
             <article
               key={project.name}
-              className="group relative flex flex-col overflow-hidden rounded-3xl border border-forest-900/30 bg-forest-950/10 p-8 transition duration-300 hover:-translate-y-2 hover:border-forest-500 hover:shadow-[0_0_30px_rgba(79,127,93,0.12)] lg:p-10"
+              className="group relative flex flex-col overflow-hidden rounded-3xl border border-forest-900/30 bg-forest-950/10 p-8 transition duration-300 hover:-translate-y-2 hover:border-forest-500 hover:shadow-[0_0_30px_var(--glow)] lg:p-10"
             >
               {/* Corner glow */}
-              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(90,138,104,0.18),transparent_70%)] opacity-50 transition duration-500 group-hover:opacity-100" />
+              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[radial-gradient(circle,var(--glow-soft),transparent_70%)] opacity-50 transition duration-500 group-hover:opacity-100" />
 
               <div className="relative flex items-start justify-between">
                 <span className="font-serif text-6xl font-bold italic leading-none text-silver-500/50 transition group-hover:text-forest-500/70">

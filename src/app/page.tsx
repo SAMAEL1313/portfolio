@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
 	return (
-		<main className="game-grid relative min-h-screen overflow-hidden text-white">
+		<main className="game-grid relative min-h-screen overflow-hidden text-fg">
 
 			{/* Background glow */}
 			<div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -43,14 +43,14 @@ export default function Home() {
 						<source src="/images/hero-bg.mp4" type="video/mp4" />
 					</video>
 
-					<div className="absolute inset-0 z-0 bg-black/50" />
+					<div className="absolute inset-0 z-0 bg-[var(--hero-veil)] transition-colors duration-500" />
 
 					{/* Slow orbiting rings */}
 					<div aria-hidden="true" className="animate-spin-slow absolute right-[8%] top-32 z-0 hidden h-72 w-72 rounded-full border border-dashed border-silver-500/20 sm:block" />
 					<div aria-hidden="true" className="animate-spin-slow-reverse absolute right-[calc(8%+4rem)] top-48 z-0 hidden h-40 w-40 rounded-full border border-forest-500/30 sm:block" />
 
 					<div className="relative z-10 max-w-4xl">
-						<div className="animate-fade-up mb-6 inline-flex items-center gap-2 rounded-full border border-silver-600/40 bg-black/40 px-4 py-2 backdrop-blur-sm">
+						<div className="animate-fade-up mb-6 inline-flex items-center gap-2 rounded-full border border-silver-600/40 bg-surface/40 px-4 py-2 backdrop-blur-sm">
 							<span className="h-2 w-2 animate-pulse rounded-full bg-forest-500" />
 							<span className="font-mono text-xs uppercase tracking-widest text-silver-300">
 								3rd Year IT Student
@@ -76,7 +76,7 @@ export default function Home() {
 						<div className="animate-fade-up delay-3 mt-8 flex flex-wrap gap-4">
 							<a
 								href="#projects"
-								className="rounded-lg bg-forest-600 px-6 py-3 font-medium transition hover:bg-forest-500"
+								className="rounded-lg bg-forest-600 px-6 py-3 font-medium text-on-accent transition hover:bg-forest-700"
 							>
 								View Projects
 							</a>

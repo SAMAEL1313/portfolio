@@ -4,7 +4,7 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="border-t border-forest-900/20 bg-black px-6 py-24 text-white"
+      className="border-t border-forest-900/20 bg-surface px-6 py-24 text-fg"
     >
       <div className="reveal mx-auto max-w-6xl">
         <SectionHeader numeral="IV" label="Education">
@@ -20,7 +20,7 @@ export default function Education() {
               <span className="absolute inset-0 animate-ping rounded-full bg-forest-500/60" />
             </span>
 
-            <div className="rounded-2xl border border-forest-900/30 bg-forest-950/10 p-8 transition duration-300 hover:border-forest-500 hover:shadow-[0_0_30px_rgba(79,127,93,0.1)]">
+            <div className="rounded-2xl border border-forest-900/30 bg-forest-950/10 p-8 transition duration-300 hover:border-forest-500 hover:shadow-[0_0_30px_var(--glow)]">
               <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
                 <div>
                   <h3 className="text-2xl font-bold">
@@ -29,7 +29,7 @@ export default function Education() {
                   <p className="mt-1 text-silver-400">3rd Year IT Student</p>
                 </div>
 
-                <span className="w-fit shrink-0 rounded-full bg-forest-600 px-3 py-1 font-mono text-xs text-white">
+                <span className="w-fit shrink-0 rounded-full bg-forest-600 px-3 py-1 font-mono text-xs text-on-accent">
                   Currently Studying
                 </span>
               </div>

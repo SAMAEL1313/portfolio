@@ -58,7 +58,7 @@ export default function BackgroundMusic() {
         {/* "Now playing" label */}
         <span
           aria-hidden="true"
-          className={`rounded-full border border-silver-600/40 bg-black/80 px-3 py-1.5 font-serif text-sm italic text-silver-300 backdrop-blur-md transition duration-500 ${
+          className={`rounded-full border border-silver-600/40 bg-surface/80 px-3 py-1.5 font-serif text-sm italic text-silver-300 backdrop-blur-md transition duration-500 ${
             isPlaying ? "translate-x-0 opacity-100" : "pointer-events-none translate-x-2 opacity-0"
           }`}
         >
@@ -70,7 +70,7 @@ export default function BackgroundMusic() {
           type="button"
           aria-label={isPlaying ? "Pause background music" : "Play background music"}
           title={isPlaying ? "Pause music" : "Play music"}
-          className="flex h-14 w-14 items-center justify-center rounded-full border border-forest-500/50 bg-black/90 text-forest-400 shadow-lg shadow-forest-950/40 backdrop-blur-md transition hover:scale-105 hover:border-forest-400"
+          className="flex h-14 w-14 items-center justify-center rounded-full border border-forest-500/50 bg-surface/90 text-forest-400 shadow-lg shadow-forest-950/40 backdrop-blur-md transition hover:scale-105 hover:border-forest-400"
         >
           <span className={`vinyl-record ${isPlaying ? "vinyl-record-playing" : ""}`}>
             <span className="vinyl-label" />

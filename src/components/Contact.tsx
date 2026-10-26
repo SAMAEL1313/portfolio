@@ -21,7 +21,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="border-t border-forest-900/20 bg-black px-6 py-24 text-white"
+      className="border-t border-forest-900/20 bg-surface px-6 py-24 text-fg"
     >
       <div className="reveal mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:gap-24">
         <SectionHeader
