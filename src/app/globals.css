@@ -110,6 +110,14 @@ section[id] {
   }
 }
 
+.animate-spin-slow {
+  animation: vinyl-spin 40s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: vinyl-spin 24s linear infinite reverse;
+}
+
 .vinyl-record {
   position: relative;
   display: block;

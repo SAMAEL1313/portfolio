@@ -45,20 +45,31 @@ export default function Home() {
 
 					<div className="absolute inset-0 z-0 bg-black/50" />
 
+					{/* Slow orbiting rings */}
+					<div aria-hidden="true" className="animate-spin-slow absolute right-[8%] top-32 z-0 hidden h-72 w-72 rounded-full border border-dashed border-silver-500/20 sm:block" />
+					<div aria-hidden="true" className="animate-spin-slow-reverse absolute right-[calc(8%+4rem)] top-48 z-0 hidden h-40 w-40 rounded-full border border-forest-500/30 sm:block" />
+
 					<div className="relative z-10 max-w-4xl">
+						<div className="animate-fade-up mb-6 inline-flex items-center gap-2 rounded-full border border-silver-600/40 bg-black/40 px-4 py-2 backdrop-blur-sm">
+							<span className="h-2 w-2 animate-pulse rounded-full bg-forest-500" />
+							<span className="font-mono text-xs uppercase tracking-widest text-silver-300">
+								3rd Year IT Student
+							</span>
+						</div>
+
 						<p className="animate-fade-up mb-4 font-mono text-sm uppercase tracking-[0.25em] text-forest-400 sm:text-base">
-							3rd Year IT Student • Full-Stack Developer
+							Full-Stack Developer
 						</p>
 
-						<h1 className="animate-fade-up delay-1 text-5xl font-bold tracking-tight sm:text-7xl">
+						<h1 className="animate-fade-up delay-1 text-6xl font-bold leading-[1.05] tracking-tight sm:text-8xl">
 							Karl Malone
-							<span className="block text-silver-300">
+							<em className="block font-semibold text-silver-300">
 								Dela Cruz
-							</span>
+							</em>
 						</h1>
 
 						<p className="animate-fade-up delay-2 mt-6 max-w-2xl text-lg leading-8 text-silver-300">
-							I&apos;m an IT student who enjoys Vibe Coding, learning new
+							I&apos;m an IT student who enjoys learning new
 							technologies, and turning ideas into working projects.
 						</p>
 

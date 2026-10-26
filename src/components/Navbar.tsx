@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
@@ -19,21 +18,13 @@ export default function Navbar() {
     <nav className="fixed top-0 z-50 w-full border-b border-forest-900/30 bg-black/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 
-        {/* Logo */}
+        {/* Wordmark */}
         <a
           href="#home"
-          className="flex items-center"
-          aria-label="Home"
+          className="font-serif text-2xl font-semibold tracking-wide text-silver-200 transition hover:text-forest-400"
           onClick={() => setIsOpen(false)}
         >
-          <Image
-            src="/images/logo.png"
-            alt="Samael logo"
-            width={45}
-            height={45}
-            priority
-            className="rounded-full object-cover transition duration-300 hover:scale-110"
-          />
+          Karl Malone
         </a>
 
         {/* Navigation links */}

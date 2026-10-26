@@ -14,6 +14,7 @@ import {
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
+import SectionHeader, { Accent } from "@/components/SectionHeader";
 
 export default function TechStack() {
   const categories = [
@@ -59,41 +60,44 @@ export default function TechStack() {
       className="border-t border-forest-900/20 bg-black px-6 py-24 text-white"
     >
       <div className="reveal mx-auto max-w-6xl">
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-forest-500">
-          Tech Stack
-        </p>
+        <SectionHeader
+          numeral="II"
+          label="Tech Stack"
+          intro="The languages, frameworks, and tools I reach for when turning an idea into something that works."
+        >
+          My <Accent>toolkit</Accent>
+        </SectionHeader>
 
-        <h2 className="text-4xl font-bold sm:text-5xl">
-          Technologies I&apos;ve Worked With
-        </h2>
-
-        <div className="mt-12 space-y-10">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {categories.map((category) => (
-            <div key={category.name}>
-              <h3 className="mb-4 font-sans text-sm font-semibold uppercase tracking-wider text-silver-500">
+            <div
+              key={category.name}
+              className="rounded-2xl border border-forest-900/30 bg-forest-950/10 p-8 transition duration-300 hover:border-forest-700"
+            >
+              <h3 className="mb-6 flex items-baseline justify-between gap-4 text-2xl font-semibold">
                 {category.name}
+                <span className="font-mono text-xs text-silver-500">
+                  {String(category.items.length).padStart(2, "0")}
+                </span>
               </h3>
 
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <ul className="space-y-4">
                 {category.items.map((item) => {
                   const Icon = item.icon;
                   return (
-                    <div
-                      key={item.name}
-                      className="group rounded-lg border border-forest-900/30 bg-forest-950/10 p-5 transition hover:-translate-y-1 hover:border-forest-500 hover:bg-forest-950/20"
-                    >
-                      <Icon aria-hidden="true" className="mb-3 h-6 w-6 text-silver-400 transition group-hover:text-forest-400" />
+                    <li key={item.name} className="group flex items-center gap-4">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-silver-600/30 text-silver-400 transition group-hover:border-forest-500 group-hover:text-forest-400">
+                        <Icon aria-hidden="true" className="h-5 w-5" />
+                      </span>
 
-                      <h4 className="font-semibold text-forest-400">
-                        {item.name}
-                      </h4>
-                      <p className="mt-1 text-sm text-silver-500">
-                        {item.desc}
-                      </p>
-                    </div>
+                      <div>
+                        <p className="font-medium text-silver-200">{item.name}</p>
+                        <p className="text-sm text-silver-500">{item.desc}</p>
+                      </div>
+                    </li>
                   );
                 })}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
