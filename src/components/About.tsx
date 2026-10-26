@@ -4,13 +4,13 @@ export default function About() {
       id="about"
       className="border-t border-green-900/20 bg-black px-6 py-24 text-white"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="reveal mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-green-500">
           About Me
         </p>
 
         <h2 className="text-4xl font-bold sm:text-5xl">
-          Who am I?
+          Bonjour! 
         </h2>
 
         <div className="mt-8 max-w-3xl space-y-6 text-lg leading-8 text-gray-400">

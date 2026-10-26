@@ -58,7 +58,7 @@ export default function TechStack() {
       id="tech-stack"
       className="border-t border-green-900/20 bg-black px-6 py-24 text-white"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="reveal mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-green-500">
           Tech Stack
         </p>
@@ -80,9 +80,9 @@ export default function TechStack() {
                   return (
                     <div
                       key={item.name}
-                      className="rounded-lg border border-green-900/30 bg-green-950/10 p-5 transition hover:border-green-500 hover:bg-green-950/20"
+                      className="group rounded-lg border border-green-900/30 bg-green-950/10 p-5 transition hover:-translate-y-1 hover:border-green-500 hover:bg-green-950/20"
                     >
-                      <Icon className="mb-3 h-6 w-6 text-gray-400 transition group-hover:text-green-400" />
+                      <Icon aria-hidden="true" className="mb-3 h-6 w-6 text-gray-400 transition group-hover:text-green-400" />
 
                       <h4 className="font-semibold text-green-400">
                         {item.name}

@@ -4,7 +4,7 @@ export default function Education() {
       id="education"
       className="border-t border-green-900/20 bg-black px-6 py-24 text-white"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="reveal mx-auto max-w-6xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-green-500">
           Education
         </p>

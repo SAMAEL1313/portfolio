@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import BackgroundMusic from "@/components/BackgroundMusic";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 	return (
@@ -35,6 +36,8 @@ export default function Home() {
 						loop
 						muted
 						playsInline
+						preload="metadata"
+						aria-hidden="true"
 						className="absolute inset-0 z-0 h-full w-full object-cover"
 					>
 						<source src="/images/hero-bg.mp4" type="video/mp4" />
@@ -43,25 +46,25 @@ export default function Home() {
 					<div className="absolute inset-0 z-0 bg-black/50" />
 
 					<div className="relative z-10 max-w-4xl">
-						<p className="animate-fade-up mt-6 max-w-2xl text-lg leading-8 text-green-400">
+						<p className="animate-fade-up mb-4 font-mono text-sm uppercase tracking-[0.25em] text-green-400 sm:text-base">
 							3rd Year IT Student • Full-Stack Developer
 						</p>
 
-						<h1 className="animate-fade-up text-5xl font-bold tracking-tight sm:text-7xl">
+						<h1 className="animate-fade-up delay-1 text-5xl font-bold tracking-tight sm:text-7xl">
 							Karl Malone
 							<span className="block text-green-500">
 								Dela Cruz
 							</span>
 						</h1>
 
-						<p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+						<p className="animate-fade-up delay-2 mt-6 max-w-2xl text-lg leading-8 text-gray-300">
 							I&apos;m an IT student who enjoys Vibe Coding, learning new
 							technologies, and turning ideas into working projects.
 						</p>
 
-						<div className="animate-fade-up mt-8 flex gap-4">
+						<div className="animate-fade-up delay-3 mt-8 flex flex-wrap gap-4">
 							<a
-							href="#projects"
+								href="#projects"
 								className="rounded-lg bg-green-600 px-6 py-3 font-medium transition hover:bg-green-500"
 							>
 								View Projects
@@ -85,6 +88,7 @@ export default function Home() {
 				<Projects />
 				<Education />
 				<Contact />
+				<Footer />
 
 			</div>
 		</main>

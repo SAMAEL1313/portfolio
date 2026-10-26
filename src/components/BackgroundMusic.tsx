@@ -51,7 +51,7 @@ export default function BackgroundMusic() {
         ref={audioRef}
         src="/audio/Backgroundmusic.mp3"
         loop
-        preload="auto"
+        preload="none"
       />
 
       <button
